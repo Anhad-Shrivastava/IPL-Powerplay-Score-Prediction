@@ -1,0 +1,8 @@
+IPL Powerplay score prediction
+			-By Anhad Shrivastava and Sumiran Bhatnagar
+Factors:
+In our project, we have implemented 3 different algorithms to predict the score at the end of powerplay based on 3 key factors:
+1)	Pitch conditions: A pitch greatly affects the batting and bowling performances during the match, with the given data and some web scraping, we are implementing a non-linear regression to predict the scores of a match based on stadium/pitch, temperature, innings and humidity
+2)	Batsman capabilities: An analytical prediction of the expected score based on batsman performances alone will give us our second output of prediction
+3)	Bowler Capabilities: An analytical prediction of the wicket taking capacity and the run conceding tendency of the bowler will give us the final predicted score that we need for our algorithm
+Once we have the predicted scores due to all these three separate factors, we have implemented a multivariate linear regression which takes these three predicted scores as the input and gives and the actual score during that match as the output. These inputs will give us coefficients to add to the regression which will have the output as the actual score of that match and these triple-predictions help us to minimize the R2 value
